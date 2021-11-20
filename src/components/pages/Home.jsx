@@ -1,11 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { NavBar } from "../common/NavBar";
+import { NavBar } from "../common";
 import { Hero } from "../common/Hero";
 
 export const Home = () => {
   return (
-    <div className="bg-light text-black">
+    <div>
       <Helmet>
         <title>Exchorant | Home</title>
         <meta name="description" content="Helmet application" />
