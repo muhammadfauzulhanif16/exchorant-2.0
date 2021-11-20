@@ -1,13 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { CarouselComponent } from "../Carousel";
-import styled from "styled-components";
 
 export const Hero = () => {
-  const buttonStyled = styled.button`
-    border-radius: 100% !important;
-  `;
-
   return (
     <div className="py-5">
       <Container>
@@ -26,12 +21,12 @@ export const Hero = () => {
                 complete with recipes, how to make and others.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <buttonStyled
+                <button
                   type="button"
-                  className="btn btn-primary px-4 me-md-2 shadow-lg"
+                  className="btn btn-primary px-4 me-md-2  shadow-lg"
                 >
                   Show Me Now
-                </buttonStyled>
+                </button>
               </div>
             </div>
           </Col>
