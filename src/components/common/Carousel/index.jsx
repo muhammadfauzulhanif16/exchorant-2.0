@@ -6,7 +6,7 @@ export const CarouselComponent = () => {
   const { Item } = Carousel;
 
   return (
-    <CarouselStyled interval={2000}>
+    <CarouselStyled interval={2000} controls={false}>
       {Image.map(({ src, alt }) => {
         return (
           <Item>
