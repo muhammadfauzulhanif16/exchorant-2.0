@@ -2,17 +2,17 @@ import React from "react";
 import { NavList } from "./NavList";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkStyled } from "./Styled";
+import styled from "styled-components";
 
 export const NavBar = () => {
-  const { Brand, Toggle, Collapse } = Navbar;
+  const { Brand, Toggle, Collapse } = Navbar,
+    NavbarStyled = styled(Navbar)`
+      background-color: #f7fafc;
+      color: #171923;
+    `;
 
   return (
-    <Navbar
-      expand="lg"
-      bg="light"
-      variant="light"
-      className="border-bottom sticky-top top-0"
-    >
+    <NavbarStyled expand="lg" className="border-bottom w-100 sticky-top">
       <Container>
         <Brand href="/" className="align-items-center d-flex me-0">
           <img
@@ -38,6 +38,6 @@ export const NavBar = () => {
           </Nav>
         </Collapse>
       </Container>
-    </Navbar>
+    </NavbarStyled>
   );
 };
