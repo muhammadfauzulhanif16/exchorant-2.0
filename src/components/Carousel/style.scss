@@ -1,0 +1,23 @@
+.carousel {
+  height: 21rem;
+  width: 34rem;
+}
+
+.carousel-inner {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border-radius: 1.5rem;
+}
+
+.carousel-indicators {
+  button {
+    display: none;
+  }
+}
+.carousel-item {
+  height: 21rem;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
