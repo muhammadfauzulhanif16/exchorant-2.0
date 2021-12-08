@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --light-gray-eceaec: #eceaec;
+  --light-gray-dad8db: #dad8db;
+  --light-blue-80b4fb: #80b4fb;
+  --light-blue-61a2f9: #61a2f9;
+  --red-e5646e: #e5646e;
+  --red-db4655: #db4655;
+  --gray-766e6e: #766e6e;
+  --dark-gray-5b5555: #5b5555;
+  --light-green-b3e59f: #b3e59f;
+  --light-green-95d6a4: #95d6a4;
+  --teal-78c2a4: #78c2a4;
+  --teal-68b594: #68b594;
+}
+
+.text {
+  &-light {
+    &-gray {
+      &-eceaec {
+        color: #eceaec;
+      }
+
+      &-dad8db {
+        color: #dad8db;
+      }
+    }
+
+    &-blue {
+      &-80b4fb {
+        color: #80b4fb;
+      }
+
+      &-61a2f9 {
+        color: #61a2f9;
+      }
+    }
+
+    &-green {
+      &-b3e59f {
+        color: #b3e59f;
+      }
+
+      &-95d6a4 {
+        color: #95d6a4;
+      }
+    }
+  }
+
+  &-red {
+    &-e5646e {
+      color: #e5646e;
+    }
+
+    &-db4655 {
+      color: #db4655;
+    }
+  }
+
+  &-gray-766e6e {
+    color: #766e6e;
+  }
+
+  &-dark-gray-5b5555 {
+    color: #5b5555;
+  }
+
+  &-teal {
+    &-78c2a4 {
+      color: #78c2a4;
+    }
+
+    &-68b594 {
+      color: #68b594;
+    }
+  }
+}
+
+.bg {
+  &-light {
+    &-gray {
+      &-eceaec {
+        color: #eceaec;
+      }
+
+      &-dad8db {
+        color: #dad8db;
+      }
+    }
+
+    &-blue {
+      &-80b4fb {
+        color: #80b4fb;
+      }
+
+      &-61a2f9 {
+        color: #61a2f9;
+      }
+    }
+
+    &-green {
+      &-b3e59f {
+        color: #b3e59f;
+      }
+
+      &-95d6a4 {
+        color: #95d6a4;
+      }
+    }
+  }
+
+  &-red {
+    &-e5646e {
+      color: #e5646e;
+    }
+
+    &-db4655 {
+      color: #db4655;
+    }
+  }
+
+  &-gray-766e6e {
+    color: #766e6e;
+  }
+
+  &-dark-gray-5b5555 {
+    color: #5b5555;
+  }
+
+  &-teal {
+    &-78c2a4 {
+      color: #78c2a4;
+    }
+
+    &-68b594 {
+      color: #68b594;
+    }
+  }
+}
+
+.fw {
+  &-500 {
+    font-weight: 500;
+  }
+
+  &-600 {
+    font-weight: 600 !important;
+  }
+
+  &-700 {
+    font-weight: 700;
+  }
+
+  &-800 {
+    font-weight: 800;
+  }
+
+  &-900 {
+    font-weight: 900;
+  }
+}
+
+.rounded {
+  &-4 {
+    border-radius: 0.25rem;
+  }
+
+  &-8 {
+    border-radius: 0.5rem;
+  }
+
+  &-16 {
+    border-radius: 1rem;
+  }
+}
+
+* {
+  transition: all ease-in-out 0.3s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-white {
+  background-color: #f7fafc !important;
+}
+
+button {
+  border-radius: 2rem !important;
+  background-color: var(--teal-78c2a4) !important;
+  color: var(--light-gray-eceaec);
+}
+
+// scrllbar
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-blue-80b4fb);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-blue-61a2f9);
+}
