@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Carousel as Slide } from "react-bootstrap";
 import "./style.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { DishAct } from "../../stores/actions/dishAct";
+import { DishAct } from "../../../stores/actions/dishAct";
 
 export const Carousel = () => {
   const { Item } = Slide,

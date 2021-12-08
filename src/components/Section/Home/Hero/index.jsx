@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "../../../Carousel";
+import { Carousel } from "../../../common/Carousel";
 import "./style.scss";
 import { Button, Row, Col, Container } from "react-bootstrap";
 
