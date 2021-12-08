@@ -1,8 +1,6 @@
-import { Container, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 export const Footer = () => {
-  const { Brand } = Navbar;
-
   return (
     <Container fluid className="d-flex container-md py-5">
       <div className="col-4">
