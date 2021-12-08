@@ -208,3 +208,11 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--light-blue-61a2f9);
 }
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: var(--light-blue-80b4fb);
+  }
+}
