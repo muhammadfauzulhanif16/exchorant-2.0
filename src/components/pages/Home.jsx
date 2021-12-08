@@ -1,18 +1,19 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { NavBar } from "../common";
-import { Hero } from "../common/Hero";
+import { Hero } from "../Section/Home/Hero";
+import { Dish } from "../Section/Home/Dish";
+import { About } from "../Section/Home/About";
+import { Team } from "../Section/Home/Team";
+import { Feature } from "../Section/Home/Feature";
+import { CTA } from "../Section/Home/CTA";
 
 export const Home = () => {
   return (
-    <div>
-      <Helmet>
-        <title>Exchorant | Home</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
-
-      <NavBar />
+    <>
       <Hero />
-    </div>
+      <Dish />
+      <About />
+      <Team />
+      <Feature />
+      <CTA />
+    </>
   );
 };
