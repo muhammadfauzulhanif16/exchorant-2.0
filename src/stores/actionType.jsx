@@ -1,3 +1,4 @@
 export const DishActType = {
-  getDish: "GET_DISH",
+  getDishCarousel: "GET_DISH_CAROUSEL",
+  getDishSummary: "GET_DISH_SUMMARY",
 };

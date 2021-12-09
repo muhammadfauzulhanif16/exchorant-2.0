@@ -1,15 +1,21 @@
 import { DishActType } from "../actionType";
 
 const initState = {
-  dish: [],
+  dishCarousel: [],
+  dishSummary: [],
 };
 
 export const DishReducer = (state = initState, action) => {
   switch (action.type) {
-    case DishActType.getDish:
+    case DishActType.getDishCarousel:
       return {
         ...state,
-        dish: action.payload,
+        dishCarousel: action.payload,
+      };
+    case DishActType.getDishSummary:
+      return {
+        ...state,
+        dishSummary: action.payload,
       };
     default:
       return state;
