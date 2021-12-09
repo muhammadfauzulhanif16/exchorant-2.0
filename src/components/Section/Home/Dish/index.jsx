@@ -2,17 +2,18 @@ import { useEffect } from "react";
 import { Card, Button, Stack } from "react-bootstrap";
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { DishAct } from "../../../../stores/actions/dishAct";
+import { DishSummaryAct } from "../../../../stores/actions/dishAct";
 import { Section } from "../../../common/Section";
 
 export const Dish = () => {
   const { Img, Body, Title } = Card,
     dispatch = useDispatch(),
-    dishList = useSelector(({ DishReducer }) => DishReducer.dish.recipes);
-  console.log("ini dish list", dishList);
+    dishList = useSelector(
+      ({ DishReducer }) => DishReducer.dishSummary.recipes
+    );
 
   useEffect(() => {
-    dispatch(DishAct());
+    dispatch(DishSummaryAct());
   }, [dispatch]);
 
   return (
@@ -21,11 +22,11 @@ export const Dish = () => {
       shortDesc="A better way to deal with hunger"
       longDesc="Overcome hunger by eating delicious food"
     >
-      <Stack direction="horizontal" gap={3} className="w-100 mb-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
         {dishList &&
           dishList?.map(({ image, title, extendedIngredients }, id) => {
             return (
-              <Card key={id} className="h-100 w-25 border-0 bg-white">
+              <div key={id} className="card col border-0 bg-white">
                 {image ? (
                   <Img variant="top" src={image} />
                 ) : (
@@ -44,12 +45,12 @@ export const Dish = () => {
                 <Body className="px-0">
                   <Title>{title}</Title>
                 </Body>
-              </Card>
+              </div>
             );
           })}
-      </Stack>
+      </div>
 
-      <Button size="lg" className="shadow-lg col-2 fs-6 p-2 border-0">
+      <Button size="lg" className="shadow-lg col-4 col-lg-2 fs-6 py-2 border-0">
         More Dish
       </Button>
     </Section>

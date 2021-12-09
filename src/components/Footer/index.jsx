@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <Container fluid className="container-md py-5 ">
-      <div className="row">
+      <div className="row flex-column flex-md-row">
         <div className="col-4">
           <div className="d-flex align-items-center mb-4">
             <img
@@ -27,7 +27,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="col-8 row">
+        <div className="col-8 row flex-column flex-sm-row">
           {NavList.map(({ title, subLink }, id) => {
             return (
               <div
@@ -56,7 +56,7 @@ export const Footer = () => {
       </div>
 
       <p className="mt-5 fw-500 text-center text-dark-gray-5b5555">
-        © {year} Exchorant 2.0 • All rights reserved
+        © {year} Exchorant v2.0 • All rights reserved
       </p>
     </Container>
   );

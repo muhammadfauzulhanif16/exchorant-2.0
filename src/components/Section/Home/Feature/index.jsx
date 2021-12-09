@@ -9,10 +9,10 @@ export const Feature = () => {
       shortDesc="Stand by, delicious, friendly, easy & safe"
       longDesc="Enjoy our unlimited & unmatched service"
     >
-      <div className="row row-cols-3 text-gray">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-gray">
         {FeatureList.map(({ image, title, content }, id) => {
           return (
-            <div className="mb-5 d-flex">
+            <div className="mb-5 d-flex" key={id}>
               <img
                 src={image}
                 className="me-3 shadow p-2 rounded-8"

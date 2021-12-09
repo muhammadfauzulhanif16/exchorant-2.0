@@ -3,7 +3,7 @@ import { Row, Container } from "react-bootstrap";
 export const Section = ({ children, title, shortDesc, longDesc }) => {
   return (
     <Container
-      className="container-md align-items-center d-flex flex-column justify-content-center vh-100"
+      className="container-md align-items-center d-flex flex-column justify-content-center py-5"
       fluid
     >
       <Row className="mb-5 text-center">
