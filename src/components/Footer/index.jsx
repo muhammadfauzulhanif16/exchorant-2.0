@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <Container fluid className="container-md py-5 ">
       <div className="row flex-column flex-md-row">
-        <div className="col-4">
+        <div className="col-sm-8 col-lg-4">
           <div className="d-flex align-items-center mb-4">
             <img
               src="./icons/android/android-launchericon-512-512.png"
@@ -27,7 +27,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="col-8 row flex-column flex-sm-row">
+        <div className="col-lg-8 row flex-column flex-sm-row">
           {NavList.map(({ title, subLink }, id) => {
             return (
               <div
