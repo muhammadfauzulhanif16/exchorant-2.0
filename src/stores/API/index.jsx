@@ -8,9 +8,9 @@ const key = [
     "1c0f1e0838ad44e8aaccbd48b5375f7b",
     "337cb9cb85fa416bbdf29e69ef8d39d9",
   ],
-  random = Math.floor(Math.random() * key.length),
-  APIKey = key[random];
+  random = Math.floor(Math.random() * key.length);
+export const APIKey = key[random];
 
 export const API = Axios.create({
-  baseURL: `https://api.spoonacular.com/recipes/random?number=4&apiKey=${APIKey}`,
+  baseURL: `https://api.spoonacular.com`,
 });
