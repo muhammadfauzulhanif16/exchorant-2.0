@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Card, Button, Stack } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { DishSummaryAct } from "../../../../stores/actions/dishAct";
