@@ -81,60 +81,122 @@
   &-light {
     &-gray {
       &-eceaec {
-        color: #eceaec;
+        background-color: #eceaec;
       }
 
       &-dad8db {
-        color: #dad8db;
+        background-color: #dad8db;
       }
     }
 
     &-blue {
       &-80b4fb {
-        color: #80b4fb;
+        background-color: #80b4fb;
       }
 
       &-61a2f9 {
-        color: #61a2f9;
+        background-color: #61a2f9;
       }
     }
 
     &-green {
       &-b3e59f {
-        color: #b3e59f;
+        background-color: #b3e59f;
       }
 
       &-95d6a4 {
-        color: #95d6a4;
+        background-color: #95d6a4;
       }
     }
   }
 
   &-red {
     &-e5646e {
-      color: #e5646e;
+      background-color: #e5646e;
     }
 
     &-db4655 {
-      color: #db4655;
+      background-color: #db4655;
     }
   }
 
   &-gray-766e6e {
-    color: #766e6e;
+    background-color: #766e6e;
   }
 
   &-dark-gray-5b5555 {
-    color: #5b5555;
+    background-color: #5b5555;
   }
 
   &-teal {
     &-78c2a4 {
-      color: #78c2a4;
+      background-color: #78c2a4;
     }
 
     &-68b594 {
-      color: #68b594;
+      background-color: #68b594;
+    }
+  }
+}
+
+.btn {
+  &-light {
+    &-gray {
+      &-eceaec {
+        background-color: #eceaec;
+      }
+
+      &-dad8db {
+        background-color: #dad8db;
+      }
+    }
+
+    &-blue {
+      &-80b4fb {
+        background-color: #80b4fb;
+      }
+
+      &-61a2f9 {
+        background-color: #61a2f9;
+      }
+    }
+
+    &-green {
+      &-b3e59f {
+        background-color: #b3e59f;
+      }
+
+      &-95d6a4 {
+        background-color: #95d6a4;
+      }
+    }
+  }
+
+  &-red {
+    &-e5646e {
+      background-color: #e5646e;
+    }
+
+    &-db4655 {
+      background-color: #db4655;
+    }
+  }
+
+  &-gray-766e6e {
+    background-color: #766e6e;
+  }
+
+  &-dark-gray-5b5555 {
+    background-color: #5b5555;
+  }
+
+  &-teal {
+    &-78c2a4 {
+      background-color: #78c2a4;
+    }
+
+    &-68b594 {
+      background-color: #68b594;
     }
   }
 }
@@ -189,13 +251,7 @@ body {
   background-color: #f7fafc !important;
 }
 
-button {
-  border-radius: 2rem !important;
-  background-color: var(--teal-78c2a4) !important;
-  color: var(--light-gray-eceaec);
-}
-
-// scrllbar
+// scrollbar
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -214,5 +270,16 @@ a {
 
   &:hover {
     color: var(--light-blue-80b4fb);
+  }
+}
+
+.isCTA {
+  background-color: var(--teal-68b594);
+  border-radius: 2rem;
+  color: var(--light-gray-dad8db) !important;
+
+  &:hover {
+    background-color: var(--teal-78c2a4);
+    color: var(--light-gray-dad8db) !important;
   }
 }

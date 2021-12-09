@@ -4,6 +4,6 @@ export const NavList = [
   { title: "Dish", to: "dish" },
   { title: "Teams", to: "teams" },
   { title: "Contact", to: "contact" },
-  { title: "Sign In", to: "Sign In", isTrue: true },
+  { title: "Sign In", to: "Sign In", isCTA: true },
   { title: "Sign Up", to: "Sign Up" },
 ];

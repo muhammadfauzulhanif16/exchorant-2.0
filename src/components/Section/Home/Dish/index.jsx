@@ -22,7 +22,7 @@ export const Dish = () => {
       shortDesc="A better way to deal with hunger"
       longDesc="Overcome hunger by eating delicious food"
     >
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
+      <div className="mb-5 row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
         {dishList &&
           dishList?.map(({ image, title, extendedIngredients }, id) => {
             return (
@@ -50,7 +50,10 @@ export const Dish = () => {
           })}
       </div>
 
-      <Button size="lg" className="shadow-lg col-4 col-lg-2 fs-6 py-2 border-0">
+      <Button
+        size="lg"
+        className="isCTA shadow-lg col-4 col-lg-2 fs-6 py-3 border-0"
+      >
         More Dish
       </Button>
     </Section>

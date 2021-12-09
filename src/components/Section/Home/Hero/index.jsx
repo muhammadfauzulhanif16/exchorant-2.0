@@ -4,9 +4,9 @@ import { Button, Container } from "react-bootstrap";
 
 export const Hero = () => {
   return (
-    <Container fluid className="container-md pe-0">
+    <Container fluid className="container-md">
       <div className="d-md-flex flex-md-row-reverse">
-        <div className="d-flex justify-content-end align-items-center col mb-5">
+        <div className="col mb-5">
           <Carousel />
         </div>
 
@@ -22,7 +22,10 @@ export const Hero = () => {
             able to find anywhere.
           </p>
 
-          <Button size="lg" className="shadow-lg col-6 py-3 fs-6 border-0">
+          <Button
+            size="lg"
+            className="shadow-lg col-6 py-3 fs-6 border-0 isCTA"
+          >
             Looking for a Dish
           </Button>
         </div>

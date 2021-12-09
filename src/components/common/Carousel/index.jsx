@@ -10,7 +10,6 @@ export const Carousel = () => {
     imageList = useSelector(
       ({ DishReducer }) => DishReducer.dishCarousel.recipes
     );
-  console.log("isi carousel", imageList);
 
   useEffect(() => {
     dispatch(DishCarouselAct());

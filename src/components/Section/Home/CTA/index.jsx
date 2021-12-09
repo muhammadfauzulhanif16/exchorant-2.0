@@ -11,7 +11,7 @@ export const CTA = () => {
       <div className="flex-grow-1 d-flex align-items-center justify-content-lg-end justify-content-sm-center">
         <Button
           size="lg"
-          className="shadow-lg col-6 col-md-12  py-3 fs-6 border-0"
+          className="isCTA shadow-lg col-6 col-md-8 py-3 fs-6 border-0"
         >
           Buy a Dish
         </Button>
