@@ -2,15 +2,18 @@ import { useEffect } from "react";
 import { Carousel as Slide } from "react-bootstrap";
 import "./style.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { DishAct } from "../../../stores/actions/dishAct";
+import { DishCarouselAct } from "../../../stores/actions/dishAct";
 
 export const Carousel = () => {
   const { Item } = Slide,
     dispatch = useDispatch(),
-    imageList = useSelector(({ DishReducer }) => DishReducer.dish.recipes);
+    imageList = useSelector(
+      ({ DishReducer }) => DishReducer.dishCarousel.recipes
+    );
+  console.log("isi carousel", imageList);
 
   useEffect(() => {
-    dispatch(DishAct());
+    dispatch(DishCarouselAct());
   }, [dispatch]);
 
   return (
