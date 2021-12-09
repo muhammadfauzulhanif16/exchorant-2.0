@@ -22,7 +22,7 @@ export const Dish = () => {
       shortDesc="A better way to deal with hunger"
       longDesc="Overcome hunger by eating delicious food"
     >
-      <div className="mb-5 row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
+      <div className="mb-5 row row-cols-2 row-cols-lg-4 w-100">
         {dishList &&
           dishList?.map(({ image, title, extendedIngredients }, id) => {
             return (
