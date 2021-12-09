@@ -24,7 +24,7 @@ export const Hero = () => {
 
           <Button
             size="lg"
-            className="shadow-lg col-6 py-3 fs-6 border-0 isCTA"
+            className="shadow-lg col-8 col-lg-6 py-3 fs-6 border-0 isCTA"
           >
             Looking for a Dish
           </Button>

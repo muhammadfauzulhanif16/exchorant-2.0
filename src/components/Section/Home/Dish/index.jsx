@@ -52,7 +52,7 @@ export const Dish = () => {
 
       <Button
         size="lg"
-        className="isCTA shadow-lg col-4 col-lg-2 fs-6 py-3 border-0"
+        className="isCTA shadow-lg col-8 col-lg-2 fs-6 py-3 border-0"
       >
         More Dish
       </Button>
