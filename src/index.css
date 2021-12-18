@@ -2,10 +2,6 @@
   transition: all ease-in-out 1s;
 }
 
-.splide__track {
-  border-radius: 1rem;
-}
-
 /*::-webkit-scrollbar {*/
 /*  width: 0.5rem;*/
 /*}*/
